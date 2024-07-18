@@ -1,0 +1,42 @@
+/* container */
+.result-box .percentage-container {
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px 0 40px;
+  }
+  
+  /* background circle */
+  .percentage-container .circular-progress {
+    position: relative;
+    width: 150px;
+    height: 150px;
+    background: conic-gradient(#c41700 90deg, #5697d4a4 0deg);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* foreground circle */
+  .percentage-container .circular-progress::before {
+    content: '';
+    position: absolute;
+    width: 110px;
+    height: 110px;
+    background: #56359e;
+    border-radius: 50%;
+  }
+  
+  /* font */
+  .circular-progress .progress-value { 
+    position: relative;
+    font-size: 30px;
+    font-weight: 600;
+  }
+  
+  .result-box .buttons {
+    display: flex;
+  }
+  
