@@ -27,11 +27,6 @@ const port = 3000;
 //permission to use json in api server
 app.use(express.json());
 
-// Define a route for the root URL ("/")
-app.get('/', (req, res) => {
-  res.send('Hello, world!');
-});
-
 // Start the app
 app.listen(port, () => {
   console.log(`App listening on port ${port}`);
