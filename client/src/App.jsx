@@ -20,6 +20,7 @@ import AllCourse from './pages/AllCourse';
 import Course from './pages/Course';
 import Applog from './App2';
 
+
 const App = () => {
 
   return (
