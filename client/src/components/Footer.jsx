@@ -42,23 +42,27 @@ function Footer() {
 				<div className="p-5">
 					<ul>
 						<p className="text-gray-800 font-bold text-2xl pb-4">Features</p>
-						<Link to="/publicdocuments">
+
 						<li className="text-gray-500 text-md pb-2 font-semibold hover:text-blue-600 cursor-pointer">
-							Documents
+						<Link to="/publicdocuments">Documents</Link>
 						</li>
-						</Link>
+
 						<li className="text-gray-500 text-md pb-2 font-semibold hover:text-blue-600 cursor-pointer">
-							Login
+						<Link to="/login">Login</Link>
 						</li>
+
 						<li className="text-gray-500 text-md pb-2 font-semibold hover:text-blue-600 cursor-pointer">
-							Teachers
+						<Link to="/login">Teachers</Link>
 						</li>
+
 						<li className="text-gray-500 text-md pb-2 font-semibold hover:text-blue-600 cursor-pointer">
-							Student
+						<Link to="/studentlogin">Student</Link>
 						</li>
+						
 						<li className="text-gray-500 text-md pb-2 font-semibold hover:text-blue-600 cursor-pointer">
-							Home
+						<Link to="/">Home</Link>
 						</li>
+						
 					</ul>
 				</div>
 				<div className="p-5">

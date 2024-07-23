@@ -38,27 +38,33 @@ export default function Header() {
                         </li>
                     ))}
                     
-                    <Link to='/studentdetails' className='md:ml-8 md:my-0 my-7 font-semibold' >
+                    <Link to='/studentdetails' className='md:my-0 my-7 font-semibold text-gray-800 hover:text-blue-400 duration-500' >
                         {CurrentUser && CurrentUser.role == 'student' ? (
+                            <div className="flex items-center">
                             <img
-                                className='rounded-full h-7 w-7 object-cover'
-                                src={CurrentUser.imageUrls || 'https://www.w3schools.com/w3images/avatar2.png'}
-                                alt='profile'
+                              className='rounded-full md:ml-8 h-7 w-7 object-cover'
+                              src={CurrentUser.avatar || 'https://www.w3schools.com/w3images/avatar2.png'}
+                              alt='profile'
                             />
+                            <p className='md:ml-8 font-semibold md:hidden'>{CurrentUser.name}</p>
+                          </div>
                         ) : (
-                            <li className='text-slate-700 hover:underline'>Student's Sign in</li>
+                            <li className='md:ml-8 font-semibold'>Student's Sign in</li>
                         )}
                     </Link>
 
-                    <Link to='/studentcreation' className='md:ml-8 md:my-0 my-7 font-semibold' >
+                    <Link to='/studentcreation' className=' md:my-0 my-7 font-semibold text-gray-800 hover:text-blue-400 duration-500' >
                         {CurrentUser && CurrentUser.role == 'teacher' ? (
+                            <div className="flex items-center">
                             <img
-                                className='rounded-full h-7 w-7 object-cover'
-                                src={CurrentUser.avatar || 'https://www.w3schools.com/w3images/avatar2.png'}
-                                alt='profile'
+                              className='md:my-0 my-7 rounded-full h-7 w-7 md:ml-8 object-cover'
+                              src={CurrentUser.avatar || 'https://www.w3schools.com/w3images/avatar2.png'}
+                              alt='profile'
                             />
+                            <p className='md:ml-8 md:my-0 my-7 font-semibold md:hidden '>{CurrentUser.username}</p>
+                            </div>
                         ) : (
-                            <li className='text-slate-700 hover:underline'>Teacher's Sign in</li>
+                            <li className='md:ml-8 md:my-0 my-7 font-semibold '>Teacher's Sign in</li>
                         )}
                     </Link>
                 </ul>

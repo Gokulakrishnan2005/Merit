@@ -314,7 +314,7 @@ export default function UpdateListing() {
 
             <div className="flex flex-wrap">
               {/* CGPA Input */}
-              <div className="flex flex-row justify-center  mr-4">
+              <div className="flex flex-col mr-4">
                 <label htmlFor="cgpa" className="font-semibold text-gray-700">
                   CGPA
                 </label>

@@ -95,13 +95,13 @@ export default function Documents() {
         onChange={handleFileChange}
         className="mb-4 p-2 border border-gray-300 rounded"
       />
-      <input
+      {/* <input
         type="text"
         placeholder="Subject"
         value={formData.subject}
         onChange={(e) => setFormData({ ...formData, subject: e.target.value })}
         className="mb-4 p-2 border border-gray-300 rounded"
-      />
+      /> */}
       <button
         onClick={handleSubmit}
         className="px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700 transition duration-300"
@@ -126,7 +126,7 @@ export default function Documents() {
         <p className="text-red-500 mt-4">Error: {uploadError}</p>
       )}
       <div className="mt-6 flex flex-col items-center border border-gray-300 rounded-lg p-4 bg-white">
-        <p className="font-bold text-lg mb-2">{pdfName}</p> {/* Display PDF file name */}
+        <p className="font-bold text-lg mb-2">{pdfName}</p> 
         {downloadURL && (
           <a
             href={downloadURL}
@@ -145,3 +145,5 @@ export default function Documents() {
     </div>
   );
 }
+
+

@@ -6,8 +6,12 @@
 
 .hero-background {
   @apply bg-cover bg-center;
-  background: linear-gradient(rgba(8,0,58,0.7), rgba(8,0,58,0.7)), url('./assets/hero.png');
+  background: linear-gradient(rgba(8,0,58,0.7), rgba(8,0,58,0.7)), url('https://firebasestorage.googleapis.com/v0/b/my-first-project-6eebf.appspot.com/o/photo_2024-07-21_20-25-16.jpg?alt=media&token=632f5afe-6e7b-41c7-b56b-c21166824217');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
+
 
 *{
   margin: 0;

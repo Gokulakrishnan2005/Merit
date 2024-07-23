@@ -1,13 +1,13 @@
 import React from 'react'
 import './About.css'
-import about_img from '../../assets/about.png'
+// import about_img from '../../assets/about.png'
 import play_icon from '../../assets/play-icon.png'
 
 const About = ({setPlayState}) => {
   return (
     <div className='about'>
       <div className="about-left">
-        <img src={about_img} alt="" className='about-img'/>
+        <img src="https://firebasestorage.googleapis.com/v0/b/my-first-project-6eebf.appspot.com/o/welcome.jpg?alt=media&token=30bb3104-a095-4ecb-876d-de361f7c7bb7" alt="" className='about-img'/>
         <img src={play_icon} alt="" className='play-icon' onClick={()=>{setPlayState(true)}}/>
       </div>
       <div className="about-right">
