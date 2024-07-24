@@ -44,7 +44,7 @@ export default function Signup() {
             }
             setLoading(false);
             setError(null);
-            navigate('/login');
+            navigate('/studentcreation');
         } catch (error) {
             setLoading(false);
             setError(error.message);
@@ -104,7 +104,7 @@ export default function Signup() {
                     </form>
 
                     {error && <p className="text-red-500">{error}</p>}
-                    <OAuth />
+                    {/* <OAuth /> */}
 
                     <div className="text-center text-gray-400">
                         Do you have any account?

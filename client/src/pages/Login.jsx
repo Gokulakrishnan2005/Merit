@@ -79,13 +79,13 @@ const Login = () => {
             </button>
           </form>
           {error && <p className="text-red-500">{error}</p>}
-          <OAuth />
-          <div className="text-center text-gray-400">
+          {/* <OAuth /> */}
+          {/* <div className="text-center text-gray-400">
             Don't have an account?
             <Link to='/signup'>
               <span className="font-bold text-black hover:text-blue-600"> Sign up</span>
             </Link>
-          </div>
+          </div> */}
         </div>
         <div className="relative">
           <img

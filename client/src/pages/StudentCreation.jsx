@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { FaFileDownload, FaUserPlus, FaSearch } from 'react-icons/fa';
+import { MdPerson } from 'react-icons/md';
 import { Link, useNavigate } from 'react-router-dom';
 
 export default function StudentCreation() {
@@ -77,6 +78,20 @@ export default function StudentCreation() {
             </div>
             <div className='flex items-center justify-center'>
               <p className='font-semibold'>View Documents</p>
+            </div>
+          </div>
+        </div>
+
+        {/* Third Box */}
+        <div className='flex flex-col items-center w-80 h-40 bg-gradient-to-r from-white to-gray-200 m-2 rounded-xl shadow-md transition-transform transform hover:scale-105 hover:shadow-xl'>
+          <div className='flex flex-col'>
+            <div className='flex flex-col text-black items-center justify-center w-40 h-32 hover:text-blue-600 transition-colors'>
+              <Link to={"/signup"}>
+                <MdPerson className='w-28 h-28' />
+              </Link>
+            </div>
+            <div className='flex items-center justify-center'>
+              <p className='font-semibold'>Add an teacher account</p>
             </div>
           </div>
         </div>
