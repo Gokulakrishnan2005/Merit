@@ -19,7 +19,7 @@ const QuizResult = ({ userScore, totalQuestions, subject }) => {
 
     return () => clearInterval(progress);
   }, [userScore, totalQuestions, subject]);
-
+ 
   return (
     <div className="percentage-container" style={{ width: '300px', display: 'flex', flexDirection: 'column', alignItems: 'center', margin: '20px 0 40px' }}>
       <div className="circular-progress" style={{ position: 'relative', width: '150px', height: '150px', background: `conic-gradient(#c40094 ${progressValue * 3.6}deg, rgba(255, 255, 255, .1) 0deg)`, borderRadius: '50%', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
