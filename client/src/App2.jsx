@@ -11,7 +11,7 @@ import VideoPlayer from './components/VideoPlayer/VideoPlayer.jsx'
 
 export default function Applog() {
   const [playState, setPlayState] = useState(false);
-
+ //checking git
   return (
     <div>
       <Hero />
