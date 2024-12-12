@@ -9,6 +9,7 @@ import Contact from './components/Contact/Contact.jsx'
 import Bottom from './components/Footer.jsx'
 import VideoPlayer from './components/VideoPlayer/VideoPlayer.jsx'
 
+//new change
 export default function Applog() {
   const [playState, setPlayState] = useState(false);
  //checking git
