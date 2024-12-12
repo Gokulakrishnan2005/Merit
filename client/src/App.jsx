@@ -19,7 +19,7 @@ import UpdateListing from './pages/UpdateListing';
 import AllCourse from './pages/AllCourse';
 import Course from './pages/Course';
 import Applog from './App2';
-import ReactGA from 'react-ga';
+// import ReactGA from 'react-ga';
 
 const App = () => {
 
