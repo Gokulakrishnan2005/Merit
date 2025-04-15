@@ -31,7 +31,12 @@ app.use(express.json());
 
 // Serve static files from the React app
 // app.use(express.static(path.join(__dirname, 'client', 'dist')));
-res.sendFile(path.join(__dirname, 'client', 'build', 'index.html'));
+// For Vite
+app.use(express.static(path.join(__dirname, 'client', 'dist')));
+app.get('*', (req, res) => {
+  res.sendFile(path.join(__dirname, 'client', 'dist', 'index.html'));
+});
+
 
 app.use('/api/user', router);
 app.use('/api/auth', authRouter);
