@@ -30,12 +30,8 @@ const port = process.env.PORT || 3000; // Use the PORT environment variable if a
 app.use(express.json());
 
 // Serve static files from the React app
-// app.use(express.static(path.join(__dirname, 'client', 'dist')));
-// For Vite
 app.use(express.static(path.join(__dirname, 'client', 'dist')));
-app.get('*', (req, res) => {
-  res.sendFile(path.join(__dirname, 'client', 'dist', 'index.html'));
-});
+
 
 
 app.use('/api/user', router);
