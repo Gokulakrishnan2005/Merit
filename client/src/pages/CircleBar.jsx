@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import { useParams } from 'react-router-dom';
 
 const QuizResult = ({ userScore, totalQuestions, subject }) => {
   const [progressValue, setProgressValue] = useState(0);

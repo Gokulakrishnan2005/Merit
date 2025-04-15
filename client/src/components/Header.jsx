@@ -5,8 +5,8 @@ import { useSelector } from 'react-redux';
 
 export default function Header() {
     const Links = [
-        { name: "Home", link: "/Home" },
-        { name: "Documents", link: "/publicdocuments" },
+        { name: "Home", link: "/" },
+        { name: "Documents", link: "/" },
 
     ];
 
