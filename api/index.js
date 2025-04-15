@@ -32,6 +32,8 @@ app.use(express.json());
 // Serve static files from the React app
 app.use(express.static(path.join(__dirname, 'client', 'dist')));
 
+
+
 app.use('/api/user', router);
 app.use('/api/auth', authRouter);
 app.use('/api/listing', listingRouter);
